@@ -12,7 +12,8 @@ public class Q1{
         String rect = "rectangle";
         int width = 0;
         int length = 0;
-        int perim = 0;
+        double radius = 0;
+        double perim = 0.0;
 
         while(true){
 
@@ -32,6 +33,13 @@ public class Q1{
 
                     System.out.println("Perimiter: " + perim);
 
+                }
+                else if(input.equals(circle)){
+                    System.out.println("Enter Radius:");
+                    radius = sc.nextInt();
+                    perim = 2*(3.14159)*(radius);
+
+                    System.out.println("Permimiter:"+ perim);
                 }
             }
 
